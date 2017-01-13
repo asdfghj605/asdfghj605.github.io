@@ -1,0 +1,324 @@
+<!DOTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OAAC</title>
+<meta name="viewport" content="width=device-width">
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/computer.css">
+
+
+<script>
+	$(function(){
+		$(window).scroll(function(){
+			if($(this).scrollTop()>0){
+				$('.nav').addClass("menufixed");
+			}
+				else{
+					$('.nav').removeClass("menufixed");
+				}
+		});
+	});
+</script>
+
+
+<script>
+
+	$(function() {
+    $('a.scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+</script>
+
+</head>
+<body>
+
+<!-- 第一排-->
+<div class="section_01" id="about">
+	<div class="nav">
+	<a href="#" class="ham"><img src="images/navbar_icon.png" width="12%"></a>
+		<ul class="menu">
+			<li><a class="scroll" href="#about">ABOUT</a></li>
+			<li><a class="scroll"  href="#work">OUR WORKS</a></li>
+			<li class="menu_long"><a class="scroll" href="#concern">WE CONCERNED</a></li>
+			<li><a  class="scroll" href="#news">NEWS</a></li>
+			<li><a class="scroll" href="#join">JOIN US</a></li>
+		</ul>
+			
+			<!-- 尋覽列圖示 -->
+	</div>	
+
+
+	<div class="sec01_left">
+		<div class="logo"><img src="images/logo.png"></div>
+	</div>
+	
+	<div class="sec01_right">
+		<div class="word">
+		Organization of africa animal conservation is a hub which concern about the wild animal in africa. 
+		There are so many ndangered animal need our protection. Our mission is provide the animal information, 
+		advocate all the people the importance of animal protection, especially ndangered animal, and give an 
+		assist to the reserch in africa animals.
+		</div>
+	</div>
+</div>
+
+<!-- 第二排 -->
+
+<div class="section_02" id="work">
+	<div class="sec02_title">OUR WORKS</div>
+	<div class="work">
+		<ul>
+			<li class="work_01">
+				<a href="#">
+				<img src="images/join/join_01.jpg"></a>
+
+				<div class="work_title"><a href="#">LOOK AFTER THE ANIMAILS</a></div>
+
+				<p><a href="#">There are several animals hurt by hunters or conflict with other animals, they need our heal to bring back to health. We also need to take care of minority which lose their parents.</a></p>
+				
+			</li>
+
+			<li class="work_02">
+				<a href="#">
+				<img src="images/join/join_02.jpg"></a>
+
+				<div class="work_title"><a href="#">FUNDS US</a></div>
+
+				<p><a href="#">We are non-profit organization, we need funds and vets to save the animals, so send e-mail to someone or some organizations that have conscious to help animals is one thing what we do.</a></p>
+				
+			</li>
+
+			<li class="work_03">
+				<a href="#">
+				<img src="images/join/join_03.jpg"></a>
+
+				<div class="work_title"><a href="#">PROTECT US</a></div>
+
+				<p><a href="#">Because the hunters are extremely rampant so many years in africa, the quantity of the endangered animals are still decrease every years.We hired mercenarys to protect these animals.</a></p>
+			
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+<!-- 第三排 -->
+
+<div class="section_03" id="concern">
+	
+		<div class="animal">
+			<div class="sec03_title">WE CONCERNED</div>
+
+				<ul class="animal_01">
+					<li>
+						<img src="images/elephant.png">
+						<p>ELEPHANT</p>
+						<p class="qu">Quantity: 14,400</p>
+					</li>
+					<li>
+						<img src="images/giraffe.png">
+						<p>GIRAFFE</p>
+						<p class="qu">Quantity: 80,000</p>
+					</li>
+					<li>
+						<img src="images/leopard.png">
+						<p>LEOPARD</p>
+						<p class="qu">Quantity: 70,000</p>
+					</li>
+				</ul>
+
+				<ul class="animal_02">
+					<li>
+						<img src="images/rhinoceros.png">
+						<p>RHINOCERO</p>
+						<p class="qu">Quantity: 17,000</p>
+					</li>
+					<li>
+						<img src="images/gazella.png">
+						<p>GAZELLA</p>
+						<p class="qu">Quantity: 80,000</p>
+					</li>
+				</ul>
+
+		
+		<!--<ul class="animal_01_title">
+			<li>ELEHPANT</li>
+			<li>GIRAFFE</li>
+			<li>LEOPARD</li>
+		</ul> -->
+
+
+		</div>
+</div>
+
+
+
+<!--  第四排 -->
+<div class="section_04" id="news">
+	<div class="sec04_title">NEWS</div>
+		<div class="news">
+			<div class="news_01">
+
+				<div class="news_img">
+					<a href="#">
+						<img src="images/news/news_01.jpg">
+					</a>
+				</div>
+
+				<div class="news_word">
+					
+						<div class="news_title"><a href="#">Giraffes Silently Slip Onto the Endangered Species List</a></div>
+
+						<p><a href="#">The International Union for the Conservation of Nature, the body that administers the world’s official endangered species list, announced yesterday that it was moving the giraffe from a species of Least Concern to Vulnerable status in its Red List of Threatened Species report. That means the animal faces extinction in the wild in the medium-term future if nothing is done to minimize the threats to its life or habitat. The next steps are endangered, critically endangered, extinct in the wild and extinct.</a></p>
+					</a>
+				</div>
+
+			</div>
+
+
+			<div class="news_01">
+
+				<div class="news_img">
+					<a href="#">
+						<img src="images/news/news_02.jpg">
+					</a>
+				</div>
+
+				<div class="news_word">
+					<a href="#">
+						<div class="news_title"><a href="#">Elephant Refugees Flee to Last Stronghold in Africa</a></div>
+
+						<p><a href="#">A national park in Botswana is struggling to support the staggering number of animals fleeing from poaching in other countries.The elephants swim across the river in a straight line, trunks jutting out of the water like snorkels. With low, guttural bellows, they push their bodies together, forming a living raft to bolster a calf too tiny to stay afloat on its own.</a></p>
+					</a>
+				</div>
+
+			</div>
+
+
+			<div class="news_01">
+
+				<div class="news_img">
+					<a href="#">
+						<img src="images/news/news_03.jpg">
+					</a>
+				</div>
+
+				<div class="news_word">
+					<a href="#">
+						<div class="news_title"><a href="#">African leopards a step closer to endangered species list, protection from trophy hunters</a></div>
+
+						<p><a href="#">The U.S. Fish and Wildlife Service announced that all leopards may qualify for “endangered” status under the Endangered Species Act. The decision comes in response to a legal petition submitted in July 2016 by The Humane Society of the United States, Humane Society International, International Fund for Animal Welfare, Center for Biological Diversity and The Fund for Animals.</a></p>
+					</a>
+				</div>
+			</div>
+		</div>
+</div>
+
+<!-- 第五排 -->
+<div class="section_05" id="join">
+	<div class="donation">
+		<div class="donate_word">
+			HELP &nbsp;THESE &nbsp;ENDANGERED &nbsp;ANIMALS
+		</div>
+
+		<div class="donate_button">
+			<a href="#">DONATE</a>
+		</div>
+	</div>
+</div>
+
+<!-- 第六排 -->
+
+<div class="section_06">
+	
+	<div class="join_title">Join Us</div>
+
+	<div class="join_word">
+		If you think that you are the member of us, you have passion on it, please join us.
+	</div>
+
+	<div class="join">
+
+		<div class="join_01">
+			<img src="images/join/join_06.jpg">
+
+			<div class="join_img_word">
+			 VOLUNTEERS
+			</div>
+		</div>
+
+		<div class="join_02">
+			<img src="images/join/join_07.jpg">
+
+			<div class="join_img_word">
+			 VETS
+			</div>
+		</div>
+
+		<div class="join_03">
+			<img src="images/join/join_05.jpg">
+
+			<div class="join_img_word">
+			 MERCENARY
+			</div>
+		</div>
+
+	</div>
+	
+</div>
+
+<!-- 第七排 -->
+
+<div class="footer">
+	<div class="footer_wrap">
+		<div class="footer_mail">
+			<a href="#">shwanken334@gmail.com
+		</a></div>
+
+		<div class="footer_phone"><a href="#">+27-12-3424194</a></div> 
+
+		<div class="footer_word">
+			972 Pretorius Street, Arcadia 0083, Pretoria, South Africa
+		</div>
+
+		<ul class="icon">
+			<li>
+				<a href="#"><img src="images/facebook.png" width="25px" alt="facebook"></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="images/twitter.png" width="25px" alt="twitter"></a>
+			</li>
+			
+			<li>
+				<a href="#"><img src="images/insa.png" width="25px" alt="instagram"></a>
+			</li>
+
+			<li>
+				<a href="#"><img src="images/in.png" width="25px" alt="instagram"></a>
+			</li>
+		</ul>
+
+		<div class="footer_lastword">
+		Copyright Organization Of Africa Animal Conservation 2016 | All rights reserved
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
